@@ -9,6 +9,7 @@ class ApplicationController < Sinatra::Base
   :database => 'sinatra_coupon'
   )
 
+
   # include/set all ERB files in /view
   set :views, File.expand_path('../../views', __FILE__)
 

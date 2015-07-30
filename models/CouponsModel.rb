@@ -1,4 +1,5 @@
 
 # inheretance from ActiveRecord which is geting table from pg
-class Coupons < ActiveRecord::Base
+class CouponsModel < ActiveRecord::Base
+  self.table_name = 'coupons'
 end

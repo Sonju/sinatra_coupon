@@ -1,0 +1,22 @@
+
+<section>
+
+  <h1>Edit Coupon from ID <%= @coupon.id %></h1>
+
+  <form action="/coupons/edit" method="post">
+    <input type="hidden" name="id" value="<%= @coupon.id %>">
+    <input type="text" name="title" value="<%= @coupon.title %>">
+    <input type="text" name="description" value="<%= @coupon.description %>">
+    <input type="text" name="discount" value="<%= @coupon.discount %>">
+    <input type="text" name="expiration_date" value="<%= @coupon.expiration_date %>">
+    <input type="text" name="vendor" value="<%= @coupon.vendor %>">
+    <input type="submit" value="Edit Student">
+ </form>
+
+ <form>
+   <form action="/coupons/delete" method="post">
+     <input type="hidden" name="id" value="<%= @coupon.id %>">
+     <input type="submit" value="Delete Student">
+  </form>
+
+</section>

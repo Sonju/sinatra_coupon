@@ -19,3 +19,12 @@ VALUES
 ('Benny', 'Wine', 30, '09/12/2015', 'Chicago', 'picture'),
 ('Jewel', 'Cheese', 25, '08/30/2015', 'Grand Ave','picture'),
 ('Marioano', 'Orange Juice', 20, '12/12/2015', 'Vernon Hills','picture');
+
+
+CREATE TABLE users (
+	id SERIAL PRIMARY KEY,
+	user_name varchar(255),
+	user_email varchar(255),
+	password_hash varchar(255),
+	password_salt varchar(255)
+);
